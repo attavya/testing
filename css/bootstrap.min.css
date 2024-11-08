@@ -635,6 +635,19 @@ pre code {
     margin-left: -15px
 }
 
+
+
+.row-1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    margin-right: -15px;
+    margin-left: -15px;
+    align-content: flex-end;
+    justify-content: space-evenly;
+}
+
 .no-gutters {
     margin-right: 0;
     margin-left: 0
@@ -8987,7 +9000,7 @@ button.bg-dark:hover {
 }
 
 .text-left {
-    text-align: left!important
+    text-align: center!important
 }
 
 .text-right {
