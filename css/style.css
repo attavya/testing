@@ -1636,6 +1636,12 @@ p.artficial:before{
     max-height: 75px
 }
 
+
+
+
+
+
+
 .check {
     height: 40px;
     margin: 0 10px;
@@ -3651,7 +3657,7 @@ textarea:required {
 
 .fullwidth {
     width: 100vw !important;
-    height: 146vh !important;
+    height: 224vh !important;
 }
 @media only screen and (max-width: 991px) and (min-width: 768px){
     .welcome_area.ico{
