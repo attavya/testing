@@ -56,6 +56,15 @@
 
 /*** 
 
+
+
+
+
+
+
+
+
+
 ====================================================================
   General css style
 ====================================================================
@@ -1623,7 +1632,7 @@ p.artficial:before{
     border-bottom: 3px solid #a843fd;
 }
 .ico-platform-logo{
-    margin-bottom: 25px;
+    margin-bottom: 34px;
     max-height: 75px
 }
 
