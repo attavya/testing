@@ -1,0 +1,2682 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)https://www.briansclubas.shop/tools.php -->
+<html data-lt-installed="true" class=" swderu idc0_350">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+        .swal-icon--error {
+            border-color: #f27474;
+            -webkit-animation: animateErrorIcon .5s;
+            animation: animateErrorIcon .5s
+        }
+
+        .swal-icon--error__x-mark {
+            position: relative;
+            display: block;
+            -webkit-animation: animateXMark .5s;
+            animation: animateXMark .5s
+        }
+
+        .swal-icon--error__line {
+            position: absolute;
+            height: 5px;
+            width: 47px;
+            background-color: #f27474;
+            display: block;
+            top: 37px;
+            border-radius: 2px
+        }
+
+        .swal-icon--error__line--left {
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            left: 17px
+        }
+
+        .swal-icon--error__line--right {
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            right: 16px
+        }
+
+        @-webkit-keyframes animateErrorIcon {
+            0% {
+                -webkit-transform: rotateX(100deg);
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+
+            to {
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                opacity: 1
+            }
+        }
+
+        @keyframes animateErrorIcon {
+            0% {
+                -webkit-transform: rotateX(100deg);
+                transform: rotateX(100deg);
+                opacity: 0
+            }
+
+            to {
+                -webkit-transform: rotateX(0deg);
+                transform: rotateX(0deg);
+                opacity: 1
+            }
+        }
+
+        @-webkit-keyframes animateXMark {
+            0% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            50% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            80% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+                margin-top: -6px
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                margin-top: 0;
+                opacity: 1
+            }
+        }
+
+        @keyframes animateXMark {
+            0% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            50% {
+                -webkit-transform: scale(.4);
+                transform: scale(.4);
+                margin-top: 26px;
+                opacity: 0
+            }
+
+            80% {
+                -webkit-transform: scale(1.15);
+                transform: scale(1.15);
+                margin-top: -6px
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                margin-top: 0;
+                opacity: 1
+            }
+        }
+
+        .swal-icon--warning {
+            border-color: #f8bb86;
+            -webkit-animation: pulseWarning .75s infinite alternate;
+            animation: pulseWarning .75s infinite alternate
+        }
+
+        .swal-icon--warning__body {
+            width: 5px;
+            height: 47px;
+            top: 10px;
+            border-radius: 2px;
+            margin-left: -2px
+        }
+
+        .swal-icon--warning__body,
+        .swal-icon--warning__dot {
+            position: absolute;
+            left: 50%;
+            background-color: #f8bb86
+        }
+
+        .swal-icon--warning__dot {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-left: -4px;
+            bottom: -11px
+        }
+
+        @-webkit-keyframes pulseWarning {
+            0% {
+                border-color: #f8d486
+            }
+
+            to {
+                border-color: #f8bb86
+            }
+        }
+
+        @keyframes pulseWarning {
+            0% {
+                border-color: #f8d486
+            }
+
+            to {
+                border-color: #f8bb86
+            }
+        }
+
+        .swal-icon--success {
+            border-color: #a5dc86
+        }
+
+        .swal-icon--success:after,
+        .swal-icon--success:before {
+            content: "";
+            border-radius: 50%;
+            position: absolute;
+            width: 60px;
+            height: 120px;
+            background: #fff;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg)
+        }
+
+        .swal-icon--success:before {
+            border-radius: 120px 0 0 120px;
+            top: -7px;
+            left: -33px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 60px 60px;
+            transform-origin: 60px 60px
+        }
+
+        .swal-icon--success:after {
+            border-radius: 0 120px 120px 0;
+            top: -11px;
+            left: 30px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-transform-origin: 0 60px;
+            transform-origin: 0 60px;
+            -webkit-animation: rotatePlaceholder 4.25s ease-in;
+            animation: rotatePlaceholder 4.25s ease-in
+        }
+
+        .swal-icon--success__ring {
+            width: 80px;
+            height: 80px;
+            border: 4px solid hsla(98, 55%, 69%, .2);
+            border-radius: 50%;
+            box-sizing: content-box;
+            position: absolute;
+            left: -4px;
+            top: -4px;
+            z-index: 2
+        }
+
+        .swal-icon--success__hide-corners {
+            width: 5px;
+            height: 90px;
+            background-color: #fff;
+            padding: 1px;
+            position: absolute;
+            left: 28px;
+            top: 8px;
+            z-index: 1;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg)
+        }
+
+        .swal-icon--success__line {
+            height: 5px;
+            background-color: #a5dc86;
+            display: block;
+            border-radius: 2px;
+            position: absolute;
+            z-index: 2
+        }
+
+        .swal-icon--success__line--tip {
+            width: 25px;
+            left: 14px;
+            top: 46px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-animation: animateSuccessTip .75s;
+            animation: animateSuccessTip .75s
+        }
+
+        .swal-icon--success__line--long {
+            width: 47px;
+            right: 8px;
+            top: 38px;
+            -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+            -webkit-animation: animateSuccessLong .75s;
+            animation: animateSuccessLong .75s
+        }
+
+        @-webkit-keyframes rotatePlaceholder {
+            0% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            5% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            12% {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+
+            to {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+        }
+
+        @keyframes rotatePlaceholder {
+            0% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            5% {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            12% {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+
+            to {
+                -webkit-transform: rotate(-405deg);
+                transform: rotate(-405deg)
+            }
+        }
+
+        @-webkit-keyframes animateSuccessTip {
+            0% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            54% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            70% {
+                width: 50px;
+                left: -8px;
+                top: 37px
+            }
+
+            84% {
+                width: 17px;
+                left: 21px;
+                top: 48px
+            }
+
+            to {
+                width: 25px;
+                left: 14px;
+                top: 45px
+            }
+        }
+
+        @keyframes animateSuccessTip {
+            0% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            54% {
+                width: 0;
+                left: 1px;
+                top: 19px
+            }
+
+            70% {
+                width: 50px;
+                left: -8px;
+                top: 37px
+            }
+
+            84% {
+                width: 17px;
+                left: 21px;
+                top: 48px
+            }
+
+            to {
+                width: 25px;
+                left: 14px;
+                top: 45px
+            }
+        }
+
+        @-webkit-keyframes animateSuccessLong {
+            0% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            65% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            84% {
+                width: 55px;
+                right: 0;
+                top: 35px
+            }
+
+            to {
+                width: 47px;
+                right: 8px;
+                top: 38px
+            }
+        }
+
+        @keyframes animateSuccessLong {
+            0% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            65% {
+                width: 0;
+                right: 46px;
+                top: 54px
+            }
+
+            84% {
+                width: 55px;
+                right: 0;
+                top: 35px
+            }
+
+            to {
+                width: 47px;
+                right: 8px;
+                top: 38px
+            }
+        }
+
+        .swal-icon--info {
+            border-color: #c9dae1
+        }
+
+        .swal-icon--info:before {
+            width: 5px;
+            height: 29px;
+            bottom: 17px;
+            border-radius: 2px;
+            margin-left: -2px
+        }
+
+        .swal-icon--info:after,
+        .swal-icon--info:before {
+            content: "";
+            position: absolute;
+            left: 50%;
+            background-color: #c9dae1
+        }
+
+        .swal-icon--info:after {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            margin-left: -3px;
+            top: 19px
+        }
+
+        .swal-icon {
+            width: 80px;
+            height: 80px;
+            border-width: 4px;
+            border-style: solid;
+            border-radius: 50%;
+            padding: 0;
+            position: relative;
+            box-sizing: content-box;
+            margin: 20px auto
+        }
+
+        .swal-icon:first-child {
+            margin-top: 32px
+        }
+
+        .swal-icon--custom {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 0
+        }
+
+        .swal-icon img {
+            max-width: 100%;
+            max-height: 100%
+        }
+
+        .swal-title {
+            color: rgba(0, 0, 0, .65);
+            font-weight: 600;
+            text-transform: none;
+            position: relative;
+            display: block;
+            padding: 13px 16px;
+            font-size: 27px;
+            line-height: normal;
+            text-align: center;
+            margin-bottom: 0
+        }
+
+        .swal-title:first-child {
+            margin-top: 26px
+        }
+
+        .swal-title:not(:first-child) {
+            padding-bottom: 0
+        }
+
+        .swal-title:not(:last-child) {
+            margin-bottom: 13px
+        }
+
+        .swal-text {
+            font-size: 16px;
+            position: relative;
+            float: none;
+            line-height: normal;
+            vertical-align: top;
+            text-align: left;
+            display: inline-block;
+            margin: 0;
+            padding: 0 10px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, .64);
+            max-width: calc(100% - 20px);
+            overflow-wrap: break-word;
+            box-sizing: border-box
+        }
+
+        .swal-text:first-child {
+            margin-top: 45px
+        }
+
+        .swal-text:last-child {
+            margin-bottom: 45px
+        }
+
+        .swal-footer {
+            text-align: right;
+            padding-top: 13px;
+            margin-top: 13px;
+            padding: 13px 16px;
+            border-radius: inherit;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0
+        }
+
+        .swal-button-container {
+            margin: 5px;
+            display: inline-block;
+            position: relative
+        }
+
+        .swal-button {
+            background-color: #7cd1f9;
+            color: #fff;
+            border: none;
+            box-shadow: none;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 14px;
+            padding: 10px 24px;
+            margin: 0;
+            cursor: pointer
+        }
+
+        .swal-button:not([disabled]):hover {
+            background-color: #78cbf2
+        }
+
+        .swal-button:active {
+            background-color: #70bce0
+        }
+
+        .swal-button:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+        }
+
+        .swal-button[disabled] {
+            opacity: .5;
+            cursor: default
+        }
+
+        .swal-button::-moz-focus-inner {
+            border: 0
+        }
+
+        .swal-button--cancel {
+            color: #555;
+            background-color: #efefef
+        }
+
+        .swal-button--cancel:not([disabled]):hover {
+            background-color: #e8e8e8
+        }
+
+        .swal-button--cancel:active {
+            background-color: #d7d7d7
+        }
+
+        .swal-button--cancel:focus {
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+        }
+
+        .swal-button--danger {
+            background-color: #e64942
+        }
+
+        .swal-button--danger:not([disabled]):hover {
+            background-color: #df4740
+        }
+
+        .swal-button--danger:active {
+            background-color: #cf423b
+        }
+
+        .swal-button--danger:focus {
+            box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+        }
+
+        .swal-content {
+            padding: 0 20px;
+            margin-top: 20px;
+            font-size: medium
+        }
+
+        .swal-content:last-child {
+            margin-bottom: 20px
+        }
+
+        .swal-content__input,
+        .swal-content__textarea {
+            -webkit-appearance: none;
+            background-color: #fff;
+            border: none;
+            font-size: 14px;
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, .14);
+            padding: 10px 13px;
+            border-radius: 2px;
+            transition: border-color .2s
+        }
+
+        .swal-content__input:focus,
+        .swal-content__textarea:focus {
+            outline: none;
+            border-color: #6db8ff
+        }
+
+        .swal-content__textarea {
+            resize: vertical
+        }
+
+        .swal-button--loading {
+            color: transparent
+        }
+
+        .swal-button--loading~.swal-button__loader {
+            opacity: 1
+        }
+
+        .swal-button__loader {
+            position: absolute;
+            height: auto;
+            width: 43px;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+            text-align: center;
+            pointer-events: none;
+            opacity: 0
+        }
+
+        .swal-button__loader div {
+            display: inline-block;
+            float: none;
+            vertical-align: baseline;
+            width: 9px;
+            height: 9px;
+            padding: 0;
+            border: none;
+            margin: 2px;
+            opacity: .4;
+            border-radius: 7px;
+            background-color: hsla(0, 0%, 100%, .9);
+            transition: background .2s;
+            -webkit-animation: swal-loading-anim 1s infinite;
+            animation: swal-loading-anim 1s infinite
+        }
+
+        .swal-button__loader div:nth-child(3n+2) {
+            -webkit-animation-delay: .15s;
+            animation-delay: .15s
+        }
+
+        .swal-button__loader div:nth-child(3n+3) {
+            -webkit-animation-delay: .3s;
+            animation-delay: .3s
+        }
+
+        @-webkit-keyframes swal-loading-anim {
+            0% {
+                opacity: .4
+            }
+
+            20% {
+                opacity: .4
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            to {
+                opacity: .4
+            }
+        }
+
+        @keyframes swal-loading-anim {
+            0% {
+                opacity: .4
+            }
+
+            20% {
+                opacity: .4
+            }
+
+            50% {
+                opacity: 1
+            }
+
+            to {
+                opacity: .4
+            }
+        }
+
+        .swal-overlay {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-size: 0;
+            overflow-y: auto;
+            background-color: rgba(0, 0, 0, .4);
+            z-index: 10000;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity .3s
+        }
+
+        .swal-overlay:before {
+            content: " ";
+            display: inline-block;
+            vertical-align: middle;
+            height: 100%
+        }
+
+        .swal-overlay--show-modal {
+            opacity: 1;
+            pointer-events: auto
+        }
+
+        .swal-overlay--show-modal .swal-modal {
+            opacity: 1;
+            pointer-events: auto;
+            box-sizing: border-box;
+            -webkit-animation: showSweetAlert .3s;
+            animation: showSweetAlert .3s;
+            will-change: transform
+        }
+
+        .swal-modal {
+            width: 478px;
+            opacity: 0;
+            pointer-events: none;
+            background-color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            position: static;
+            margin: 20px auto;
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: scale(1);
+            transform: scale(1);
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+            z-index: 10001;
+            transition: opacity .2s, -webkit-transform .3s;
+            transition: transform .3s, opacity .2s;
+            transition: transform .3s, opacity .2s, -webkit-transform .3s
+        }
+
+        @media (max-width:500px) {
+            .swal-modal {
+                width: calc(100% - 20px)
+            }
+        }
+
+        @-webkit-keyframes showSweetAlert {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            1% {
+                -webkit-transform: scale(.5);
+                transform: scale(.5)
+            }
+
+            45% {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
+            }
+
+            80% {
+                -webkit-transform: scale(.95);
+                transform: scale(.95)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+
+        @keyframes showSweetAlert {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+
+            1% {
+                -webkit-transform: scale(.5);
+                transform: scale(.5)
+            }
+
+            45% {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05)
+            }
+
+            80% {
+                -webkit-transform: scale(.95);
+                transform: scale(.95)
+            }
+
+            to {
+                -webkit-transform: scale(1);
+                transform: scale(1)
+            }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Force viewport to a fixed width
+            var viewportMeta = document.querySelector('meta[name="viewport"]');
+            viewportMeta.setAttribute('content', 'width=1024');
+        });
+    </script>
+</head>
+
+<body>
+    <li <html="" lang="en">
+        <style type="text/css">
+            .swal-icon--error {
+                border-color: #f27474;
+                -webkit-animation: animateErrorIcon .5s;
+                animation: animateErrorIcon .5s
+            }
+
+            .swal-icon--error__x-mark {
+                position: relative;
+                display: block;
+                -webkit-animation: animateXMark .5s;
+                animation: animateXMark .5s
+            }
+
+            .swal-icon--error__line {
+                position: absolute;
+                height: 5px;
+                width: 47px;
+                background-color: #f27474;
+                display: block;
+                top: 37px;
+                border-radius: 2px
+            }
+
+            .swal-icon--error__line--left {
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                left: 17px
+            }
+
+            .swal-icon--error__line--right {
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                right: 16px
+            }
+
+            @-webkit-keyframes animateErrorIcon {
+                0% {
+                    -webkit-transform: rotateX(100deg);
+                    transform: rotateX(100deg);
+                    opacity: 0
+                }
+
+                to {
+                    -webkit-transform: rotateX(0deg);
+                    transform: rotateX(0deg);
+                    opacity: 1
+                }
+            }
+
+            @keyframes animateErrorIcon {
+                0% {
+                    -webkit-transform: rotateX(100deg);
+                    transform: rotateX(100deg);
+                    opacity: 0
+                }
+
+                to {
+                    -webkit-transform: rotateX(0deg);
+                    transform: rotateX(0deg);
+                    opacity: 1
+                }
+            }
+
+            @-webkit-keyframes animateXMark {
+                0% {
+                    -webkit-transform: scale(.4);
+                    transform: scale(.4);
+                    margin-top: 26px;
+                    opacity: 0
+                }
+
+                50% {
+                    -webkit-transform: scale(.4);
+                    transform: scale(.4);
+                    margin-top: 26px;
+                    opacity: 0
+                }
+
+                80% {
+                    -webkit-transform: scale(1.15);
+                    transform: scale(1.15);
+                    margin-top: -6px
+                }
+
+                to {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    margin-top: 0;
+                    opacity: 1
+                }
+            }
+
+            @keyframes animateXMark {
+                0% {
+                    -webkit-transform: scale(.4);
+                    transform: scale(.4);
+                    margin-top: 26px;
+                    opacity: 0
+                }
+
+                50% {
+                    -webkit-transform: scale(.4);
+                    transform: scale(.4);
+                    margin-top: 26px;
+                    opacity: 0
+                }
+
+                80% {
+                    -webkit-transform: scale(1.15);
+                    transform: scale(1.15);
+                    margin-top: -6px
+                }
+
+                to {
+                    -webkit-transform: scale(1);
+                    transform: scale(1);
+                    margin-top: 0;
+                    opacity: 1
+                }
+            }
+
+            .swal-icon--warning {
+                border-color: #f8bb86;
+                -webkit-animation: pulseWarning .75s infinite alternate;
+                animation: pulseWarning .75s infinite alternate
+            }
+
+            .swal-icon--warning__body {
+                width: 5px;
+                height: 47px;
+                top: 10px;
+                border-radius: 2px;
+                margin-left: -2px
+            }
+
+            .swal-icon--warning__body,
+            .swal-icon--warning__dot {
+                position: absolute;
+                left: 50%;
+                background-color: #f8bb86
+            }
+
+            .swal-icon--warning__dot {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                margin-left: -4px;
+                bottom: -11px
+            }
+
+            @-webkit-keyframes pulseWarning {
+                0% {
+                    border-color: #f8d486
+                }
+
+                to {
+                    border-color: #f8bb86
+                }
+            }
+
+            @keyframes pulseWarning {
+                0% {
+                    border-color: #f8d486
+                }
+
+                to {
+                    border-color: #f8bb86
+                }
+            }
+
+            .swal-icon--success {
+                border-color: #a5dc86
+            }
+
+            .swal-icon--success:after,
+            .swal-icon--success:before {
+                content: "";
+                border-radius: 50%;
+                position: absolute;
+                width: 60px;
+                height: 120px;
+                background: #fff;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg)
+            }
+
+            .swal-icon--success:before {
+                border-radius: 120px 0 0 120px;
+                top: -7px;
+                left: -33px;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-transform-origin: 60px 60px;
+                transform-origin: 60px 60px
+            }
+
+            .swal-icon--success:after {
+                border-radius: 0 120px 120px 0;
+                top: -11px;
+                left: 30px;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-transform-origin: 0 60px;
+                transform-origin: 0 60px;
+                -webkit-animation: rotatePlaceholder 4.25s ease-in;
+                animation: rotatePlaceholder 4.25s ease-in
+            }
+
+            .swal-icon--success__ring {
+                width: 80px;
+                height: 80px;
+                border: 4px solid hsla(98, 55%, 69%, .2);
+                border-radius: 50%;
+                box-sizing: content-box;
+                position: absolute;
+                left: -4px;
+                top: -4px;
+                z-index: 2
+            }
+
+            .swal-icon--success__hide-corners {
+                width: 5px;
+                height: 90px;
+                background-color: #fff;
+                padding: 1px;
+                position: absolute;
+                left: 28px;
+                top: 8px;
+                z-index: 1;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg)
+            }
+
+            .swal-icon--success__line {
+                height: 5px;
+                background-color: #a5dc86;
+                display: block;
+                border-radius: 2px;
+                position: absolute;
+                z-index: 2
+            }
+
+            .swal-icon--success__line--tip {
+                width: 25px;
+                left: 14px;
+                top: 46px;
+                -webkit-transform: rotate(45deg);
+                transform: rotate(45deg);
+                -webkit-animation: animateSuccessTip .75s;
+                animation: animateSuccessTip .75s
+            }
+
+            .swal-icon--success__line--long {
+                width: 47px;
+                right: 8px;
+                top: 38px;
+                -webkit-transform: rotate(-45deg);
+                transform: rotate(-45deg);
+                -webkit-animation: animateSuccessLong .75s;
+                animation: animateSuccessLong .75s
+            }
+
+            @-webkit-keyframes rotatePlaceholder {
+                0% {
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg)
+                }
+
+                5% {
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg)
+                }
+
+                12% {
+                    -webkit-transform: rotate(-405deg);
+                    transform: rotate(-405deg)
+                }
+
+                to {
+                    -webkit-transform: rotate(-405deg);
+                    transform: rotate(-405deg)
+                }
+            }
+
+            @keyframes rotatePlaceholder {
+                0% {
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg)
+                }
+
+                5% {
+                    -webkit-transform: rotate(-45deg);
+                    transform: rotate(-45deg)
+                }
+
+                12% {
+                    -webkit-transform: rotate(-405deg);
+                    transform: rotate(-405deg)
+                }
+
+                to {
+                    -webkit-transform: rotate(-405deg);
+                    transform: rotate(-405deg)
+                }
+            }
+
+            @-webkit-keyframes animateSuccessTip {
+                0% {
+                    width: 0;
+                    left: 1px;
+                    top: 19px
+                }
+
+                54% {
+                    width: 0;
+                    left: 1px;
+                    top: 19px
+                }
+
+                70% {
+                    width: 50px;
+                    left: -8px;
+                    top: 37px
+                }
+
+                84% {
+                    width: 17px;
+                    left: 21px;
+                    top: 48px
+                }
+
+                to {
+                    width: 25px;
+                    left: 14px;
+                    top: 45px
+                }
+            }
+
+            @keyframes animateSuccessTip {
+                0% {
+                    width: 0;
+                    left: 1px;
+                    top: 19px
+                }
+
+                54% {
+                    width: 0;
+                    left: 1px;
+                    top: 19px
+                }
+
+                70% {
+                    width: 50px;
+                    left: -8px;
+                    top: 37px
+                }
+
+                84% {
+                    width: 17px;
+                    left: 21px;
+                    top: 48px
+                }
+
+                to {
+                    width: 25px;
+                    left: 14px;
+                    top: 45px
+                }
+            }
+
+            @-webkit-keyframes animateSuccessLong {
+                0% {
+                    width: 0;
+                    right: 46px;
+                    top: 54px
+                }
+
+                65% {
+                    width: 0;
+                    right: 46px;
+                    top: 54px
+                }
+
+                84% {
+                    width: 55px;
+                    right: 0;
+                    top: 35px
+                }
+
+                to {
+                    width: 47px;
+                    right: 8px;
+                    top: 38px
+                }
+            }
+
+            @keyframes animateSuccessLong {
+                0% {
+                    width: 0;
+                    right: 46px;
+                    top: 54px
+                }
+
+                65% {
+                    width: 0;
+                    right: 46px;
+                    top: 54px
+                }
+
+                84% {
+                    width: 55px;
+                    right: 0;
+                    top: 35px
+                }
+
+                to {
+                    width: 47px;
+                    right: 8px;
+                    top: 38px
+                }
+            }
+
+            .swal-icon--info {
+                border-color: #c9dae1
+            }
+
+            .swal-icon--info:before {
+                width: 5px;
+                height: 29px;
+                bottom: 17px;
+                border-radius: 2px;
+                margin-left: -2px
+            }
+
+            .swal-icon--info:after,
+            .swal-icon--info:before {
+                content: "";
+                position: absolute;
+                left: 50%;
+                background-color: #c9dae1
+            }
+
+            .swal-icon--info:after {
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+                margin-left: -3px;
+                top: 19px
+            }
+
+            .swal-icon {
+                width: 80px;
+                height: 80px;
+                border-width: 4px;
+                border-style: solid;
+                border-radius: 50%;
+                padding: 0;
+                position: relative;
+                box-sizing: content-box;
+                margin: 20px auto
+            }
+
+            .swal-icon:first-child {
+                margin-top: 32px
+            }
+
+            .swal-icon--custom {
+                width: auto;
+                height: auto;
+                max-width: 100%;
+                border: none;
+                border-radius: 0
+            }
+
+            .swal-icon img {
+                max-width: 100%;
+                max-height: 100%
+            }
+
+            .swal-title {
+                color: rgba(0, 0, 0, .65);
+                font-weight: 600;
+                text-transform: none;
+                position: relative;
+                display: block;
+                padding: 13px 16px;
+                font-size: 27px;
+                line-height: normal;
+                text-align: center;
+                margin-bottom: 0
+            }
+
+            .swal-title:first-child {
+                margin-top: 26px
+            }
+
+            .swal-title:not(:first-child) {
+                padding-bottom: 0
+            }
+
+            .swal-title:not(:last-child) {
+                margin-bottom: 13px
+            }
+
+            .swal-text {
+                font-size: 16px;
+                position: relative;
+                float: none;
+                line-height: normal;
+                vertical-align: top;
+                text-align: left;
+                display: inline-block;
+                margin: 0;
+                padding: 0 10px;
+                font-weight: 400;
+                color: rgba(0, 0, 0, .64);
+                max-width: calc(100% - 20px);
+                overflow-wrap: break-word;
+                box-sizing: border-box
+            }
+
+            .swal-text:first-child {
+                margin-top: 45px
+            }
+
+            .swal-text:last-child {
+                margin-bottom: 45px
+            }
+
+            .swal-footer {
+                text-align: right;
+                padding-top: 13px;
+                margin-top: 13px;
+                padding: 13px 16px;
+                border-radius: inherit;
+                border-top-left-radius: 0;
+                border-top-right-radius: 0
+            }
+
+            .swal-button-container {
+                margin: 5px;
+                display: inline-block;
+                position: relative
+            }
+
+            .swal-button {
+                background-color: #7cd1f9;
+                color: #fff;
+                border: none;
+                box-shadow: none;
+                border-radius: 5px;
+                font-weight: 600;
+                font-size: 14px;
+                padding: 10px 24px;
+                margin: 0;
+                cursor: pointer
+            }
+
+            .swal-button:not([disabled]):hover {
+                background-color: #78cbf2
+            }
+
+            .swal-button:active {
+                background-color: #70bce0
+            }
+
+            .swal-button:focus {
+                outline: none;
+                box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(43, 114, 165, .29)
+            }
+
+            .swal-button[disabled] {
+                opacity: .5;
+                cursor: default
+            }
+
+            .swal-button::-moz-focus-inner {
+                border: 0
+            }
+
+            .swal-button--cancel {
+                color: #555;
+                background-color: #efefef
+            }
+
+            .swal-button--cancel:not([disabled]):hover {
+                background-color: #e8e8e8
+            }
+
+            .swal-button--cancel:active {
+                background-color: #d7d7d7
+            }
+
+            .swal-button--cancel:focus {
+                box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(116, 136, 150, .29)
+            }
+
+            .swal-button--danger {
+                background-color: #e64942
+            }
+
+            .swal-button--danger:not([disabled]):hover {
+                background-color: #df4740
+            }
+
+            .swal-button--danger:active {
+                background-color: #cf423b
+            }
+
+            .swal-button--danger:focus {
+                box-shadow: 0 0 0 1px #fff, 0 0 0 3px rgba(165, 43, 43, .29)
+            }
+
+            .swal-content {
+                padding: 0 20px;
+                margin-top: 20px;
+                font-size: medium
+            }
+
+            .swal-content:last-child {
+                margin-bottom: 20px
+            }
+
+            .swal-content__input,
+            .swal-content__textarea {
+                -webkit-appearance: none;
+                background-color: #fff;
+                border: none;
+                font-size: 14px;
+                display: block;
+                box-sizing: border-box;
+                width: 100%;
+                border: 1px solid rgba(0, 0, 0, .14);
+                padding: 10px 13px;
+                border-radius: 2px;
+                transition: border-color .2s
+            }
+
+            .swal-content__input:focus,
+            .swal-content__textarea:focus {
+                outline: none;
+                border-color: #6db8ff
+            }
+
+            .swal-content__textarea {
+                resize: vertical
+            }
+
+            .swal-button--loading {
+                color: transparent
+            }
+
+            .swal-button--loading~.swal-button__loader {
+                opacity: 1
+            }
+
+            .swal-button__loader {
+                position: absolute;
+                height: auto;
+                width: 43px;
+                z-index: 2;
+                left: 50%;
+                top: 50%;
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+                text-align: center;
+                pointer-events: none;
+                opacity: 0
+            }
+
+            .swal-button__loader div {
+                display: inline-block;
+                float: none;
+                vertical-align: baseline;
+                width: 9px;
+                height: 9px;
+                padding: 0;
+                border: none;
+                margin: 2px;
+                opacity: .4;
+                border-radius: 7px;
+                background-color: hsla(0, 0%, 100%, .9);
+                transition: background .2s;
+                -webkit-animation: swal-loading-anim 1s infinite;
+                animation: swal-loading-anim 1s infinite
+            }
+
+            .swal-button__loader div:nth-child(3n+2) {
+                -webkit-animation-delay: .15s;
+                animation-delay: .15s
+            }
+
+            .swal-button__loader div:nth-child(3n+3) {
+                -webkit-animation-delay: .3s;
+                animation-delay: .3s
+            }
+
+            @-webkit-keyframes swal-loading-anim {
+                0% {
+                    opacity: .4
+                }
+
+                20% {
+                    opacity: .4
+                }
+
+                50% {
+                    opacity: 1
+                }
+
+                to {
+                    opacity: .4
+                }
+            }
+
+            @keyframes swal-loading-anim {
+                0% {
+                    opacity: .4
+                }
+
+                20% {
+                    opacity: .4
+                }
+
+                50% {
+                    opacity: 1
+                }
+
+                to {
+                    opacity: .4
+                }
+            }
+
+            .swal-overlay {
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                text-align: center;
+                font-size: 0;
+                overflow-y: auto;
+                background-color: rgba(0, 0, 0, .4);
+                z-index: 10000;
+                pointer-events: none;
+                opacity: 0;
+                transition: opacity .3s
+            }
+
+            .swal-overlay:before {
+                content: " ";
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%
+            }
+
+            .swal-overlay--show-modal {
+                opacity: 1;
+                pointer-events: auto
+            }
+
+            .swal-overlay--show-modal .swal-modal {
+                opacity: 1;
+                pointer-events: auto;
+                box-sizing: border-box;
+                -webkit-animation: showSweetAlert .3s;
+                animation: showSweetAlert .3s;
+                will-change: transform
+            }
+
+            .swal-modal {
+                width: 478px;
+                opacity: 0;
+                pointer-events: none;
+                background-color: #fff;
+                text-align: center;
+                border-radius: 5px;
+                position: static;
+                margin: 20px auto;
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: scale(1);
+                transform: scale(1);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                z-index: 10001;
+                transition: opacity .2s, -webkit-transform .3s;
+                transition: transform .3s, opacity .2s;
+                transition: transform .3s, opacity .2s, -webkit-transform .3s
+            }
+
+            @media (max-width:500px) {
+                .swal-modal {
+                    width: calc(100% - 20px)
+                }
+            }
+
+            @-webkit-keyframes showSweetAlert {
+                0% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1)
+                }
+
+                1% {
+                    -webkit-transform: scale(.5);
+                    transform: scale(.5)
+                }
+
+                45% {
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05)
+                }
+
+                80% {
+                    -webkit-transform: scale(.95);
+                    transform: scale(.95)
+                }
+
+                to {
+                    -webkit-transform: scale(1);
+                    transform: scale(1)
+                }
+            }
+
+            @keyframes showSweetAlert {
+                0% {
+                    -webkit-transform: scale(1);
+                    transform: scale(1)
+                }
+
+                1% {
+                    -webkit-transform: scale(.5);
+                    transform: scale(.5)
+                }
+
+                45% {
+                    -webkit-transform: scale(1.05);
+                    transform: scale(1.05)
+                }
+
+                80% {
+                    -webkit-transform: scale(.95);
+                    transform: scale(.95)
+                }
+
+                to {
+                    -webkit-transform: scale(1);
+                    transform: scale(1)
+                }
+            }
+        </style>
+
+
+
+        <script async="" src="./Tools_files/js"></script>
+
+
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=1024">
+        <meta name="n" content="1">
+        <title>Tools</title>
+        <link href="./Tools_files/bootstrap.min.css" rel="stylesheet">
+        <link href="./Tools_files/justified-nav.css" rel="stylesheet">
+        <link href="./Tools_files/elem.css" rel="stylesheet">
+
+        <link href="./Tools_files/bootstrap-datetimepicker.min.css" rel="stylesheet">
+        <link href="./Tools_files/bootstrap-toggle.min.css" rel="stylesheet">
+        <link href="./Tools_files/jquery.bootstrap-touchspin.css" rel="stylesheet">
+        <link href="./Tools_files/slider.css" rel="stylesheet">
+        <script src="./Tools_files/jquery.min.js.download"></script>
+        <script src="./Tools_files/bootstrap.min.js.download"></script>
+        <script src="./Tools_files/ie10-viewport-bug-workaround.js.download"></script>
+        <script src="./Tools_files/date.js.download"></script>
+        <script src="./Tools_files/moment-with-locales.min.js.download"></script>
+        <script src="./Tools_files/bootstrap-datetimepicker.min.js.download"></script>
+        <script src="./Tools_files/passgen.min.js.download"></script>
+        <script src="./Tools_files/bootstrap-toggle.min.js.download"></script>
+        <script src="./Tools_files/jquery.bootstrap-touchspin.js.download"></script>
+        <script src="./Tools_files/bootstrap-slider.js.download"></script>
+
+        <style>
+            .nav-right li a {
+                padding-top: 6px !important;
+                padding-bottom: 6px !important;
+            }
+        </style>
+        <style type="text/css">
+            @font-face {
+                font-family: Roboto;
+                src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf");
+            }
+        </style>
+
+
+
+        <div class="container" style="width:90%;max-width:1700px;">
+            <div class="masthead" style>
+                <div role="navigation"
+                    style="float: right;margin-top: 0px; white-space: nowrap; width: min-content;width: -moz-min-content;width: -webkit-min-content;display: -ms-grid;-ms-grid-columns: min-content;">
+                    <ul class="nav nav-justified nav-right">
+                        <li>
+                            <a href="billings.html"
+                                style="color:green;"> <b>Lottery</b> 
+                                <i class="fa-duotone fa-regular fa-dollar-sign" style="--fa-primary-color: #008000; --fa-secondary-color: #008000;"></i></a>
+                        </li>
+                        <li>
+                            <a
+                                href="cvv.html"><span
+                                    class="openMyGift" data-toggle="modal"
+                                    data-target="#myModalDetailsMG">
+                                    <i class="fa-sharp fa-solid fa-gift" style="color: #ff0000;"></i>
+                                        My
+                                    Gift </span></a>
+                        </li>
+                        <li>
+                            <a
+                                href="login.html">
+                                <i class="fa-solid fa-right-from-bracket" style="color: #757575;"></i><b> Logout</b></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="text-muted"
+                    style="margin-top: -20px;padding-bottom:10px;float: none;width: auto;overflow: visible;">
+                    <h3 class="text-muted">Welcome <i>attavya</i> <span
+                            style="font-size: 16px;">[<a
+                                href="Profile.html">profile</a>]</span></h3>
+
+                    <b>Balance:</b> <span
+                        style="color: red; font-weight: bold;">LOCKED</span> [
+                    <a href="billings.html">add
+                        funds</a>]<br>
+
+                    <link rel="shortcut icon" type="image/png">
+                    <b>Crab Rating:</b>
+                    <a href="dashborad.html"
+                        class="open_cr" title="0.0 crab">
+
+                        <!-- No crab image for 0 rating -->
+
+                    </a>
+                    [ <a href="dashborad.html"
+                        class="open_cr">details</a> ]<br>
+
+                    <span style="display:none;"
+                        id="current_loan_block"><b>Current loan:</b> <span
+                            id="current_loan"
+                            style="color: red;"></span>$<br></span>
+                    <span style="display:none;"> en </span>
+                    <b>Current server time:</b> <span
+                        id="current_time">23:47:40</span>
+                </div>
+                <div role="navigation">
+                    <ul class="nav nav-justified">
+                        <li id="menu-home" class=" active active"><a
+                                href="dashborad.html">News</a></li>
+                        <li id="menu-dumps-search">
+                            <a href="dumps.html"
+                                style="background-image: -webkit-linear-gradient(top, #ABDDFC 0%, #ABDDFC 100%);">Dumps</a>
+                        </li>
+                        <li id="menu-cc-search">
+                            <a href="cvv.html"
+                                style="background-image: -webkit-linear-gradient(top, #C8F6C8 0%, #C8F6C8 100%);">CVV2</a>
+                        </li>
+
+                        <li id="menu-wholesale" style="min-width:110px;">
+                            <a
+                                href="Wholesale.html">Wholesale</a>
+                        </li>
+                        <li id="menu-cart">
+                            <a
+                                href="cart.html">Cart
+                                <span class="badge"
+                                    id="count_cart_items"></span></a>
+                        </li>
+                        <li id="menu-orders">
+                            <a
+                                href="orders.html">Orders</a>
+                        </li>
+                        <li id="menu-auction">
+                            <a href="auction.html"
+                                style="color: white; background-image: -webkit-linear-gradient(top, #FB786B 0%, #FB786B 100%);">Auction
+                                <span class="badge" id="count_bids"></span></a>
+                        </li>
+                        <li id="menu-checker">
+                            <a href="Tools.html"
+                                style="background-color:#FFFFCC">Tools</a>
+                        </li>
+                        <li id="menu-tickets">
+                            <a
+                                href="Tickets.html">Tickets
+                                <span class="badge"
+                                    id="count_tickets"></span></a>
+                        </li>
+                        <li id="menu-logs" class="dropdown">
+                            <a
+                                href="dashborad.html"
+                                class="dropdown-toggle" data-toggle="dropdown"
+                                role="button" aria-expanded="false">Help<span
+                                    class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+
+                            </ul>
+                        </li>
+                        <li id="menu-profile">
+                            <a href="Profile.html">
+                                <i class="fa fa-gear" style="color: #999999;"></i>
+                              </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="alert alert-danger alert-danger-page fade in" style="margin-top: 10px; display: none;"
+                tabindex="-1">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <p id="pageDanger">In order to receive a gift you have got to have minimum of $100 in combined deposits
+                </p>
+            </div>
+            <div class="alert alert-block alert-success alert-success-page fade in"
+                style="display:none;margin-top:10px;" tabindex="-1">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <p id="pageSuccess"></p>
+            </div>
+            <div class="alert alert-block alert-info alert-info-page fade in" style="display:none;margin-top:30px;"
+                tabindex="-1">
+                <button type="button" class="close" data-dismiss="alert">×</button>
+                <p id="pageInfo"></p>
+            </div>
+            <div class="alert alert-block alert-info fade in" style="margin-top:10px;" tabindex="-1">
+
+                <p>
+                    Your account is inactive. For activation you need <a
+                        href="billings.html">to top up your
+                        balance</a>.<br>
+                    Attention: Not activated accounts for more than 5 days will be deleted automatically.
+                </p>
+            </div>
+
+
+            <div class="panel panel-default" style="margin-top: 15px;min-height: 400px;">
+                <div class="panel-body">
+                    <div class="col-sm-16">
+                        <style>
+                            .form-group.required .control-label:after {
+                                content: " *";
+                                color: red;
+                            }
+
+                            ul.cardinfo {
+                                margin: 0;
+                                padding: 0;
+                                list-style: none;
+                            }
+
+                            .cardinfo li {
+                                display: flex;
+                                justify-content: space-between;
+                            }
+
+                            .cardinfo_name {
+                                width: 30%;
+                            }
+
+                            .cardinfo_value {
+                                width: 70%;
+                            }
+
+                            .sticky-content.fixed {
+                                position: fixed;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                background: #DDD;
+                                padding: 0px;
+                                z-index: 999;
+                            }
+
+                            .buttonsCart {
+                                margin: 10px 0px 10px 0px;
+                            }
+                        </style>
+                        <h2 class="featurette-heading">Tools</h2><br>
+                        <div role="tabpanel">
+                            <ul class="nav nav-tabs" id="myTabs" role="tablist">
+                                <li class="active"><a href="https://www.briansclubas.shop/tools#dumpsTab" role="tab"
+                                        data-toggle="tab">Dumps Checker</a></li>
+                                <li class=""><a href="https://www.briansclubas.shop/tools#ccTab" role="tab"
+                                        data-toggle="tab">CVV2 Checker</a></li>
+                                <li class=""><a href="https://www.briansclubas.shop/tools#ssnTab" role="tab"
+                                        data-toggle="tab">SSN-DOB</a></li>
+                                <li class=""><a href="https://www.briansclubas.shop/tools#binTab" role="tab"
+                                        data-toggle="tab">Bins Lookup</a></li>
+                                <li class=""><a href="https://www.briansclubas.shop/tools#zipTab" role="tab"
+                                        data-toggle="tab">ZIPs Lookup</a></li>
+                                <li class=""><a href="https://www.briansclubas.shop/tools#track1Tab" role="tab"
+                                        data-toggle="tab">Track1 Generator</a></li>
+                                <li class=""><a href="https://www.briansclubas.shop/tools#mybinsTab" role="tab"
+                                        data-toggle="tab">My Bins</a></li>
+                                <li class=""><a href="https://www.briansclubas.shop/tools#historyTab" role="tab"
+                                        data-toggle="tab" style="background-color: #b8cfee">History</a></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content" style="margin-top:15px;">
+                            <div role="tabpanel" class="tab-pane active" id="dumpsTab">
+                                <div class="alert alert-block alert-info fade in" style="" tabindex="-1">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        This stand-alone checker is not for replacements!<br>
+                                        Up to 10 dumps per search<br>
+                                        Format: <b>CARD_NUMBER=YYMM</b>
+                                    </p>
+                                </div>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="dumps_checker" class="col-sm-2 control-label">Checker</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="dumps_checker">
+                                                <option value="luxchecker">LuxChecker
+                                                    (0.50$ / check)
+                                                </option>
+                                                <option value="ochecker">0check
+                                                    (0.50$ / check)
+                                                </option>
+                                                <option value="cardok">Card-OK
+                                                    (0.50$ / check)
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dumps_data" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-4">
+                                            <textarea class="form-control" id="dumps_data" style="height: 150px;"
+                                                placeholder="4455660157547825=1509"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="button" class="btn btn-default make_check"
+                                                data-checktype="dumps"><span class="glyphicon glyphicon-play"
+                                                    aria-hidden="true"></span> Check</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="dumps_result"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="ccTab">
+                                <div class="alert alert-block alert-info fade in" style="" tabindex="-1">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        This stand-alone checker is not for replacements!<br>
+                                        Up to 10 cards per search<br>
+                                        Format: <b>CARD_NUMBER=MMYY</b> or
+                                        <b>CARD_NUMBER</b>=<b>MMYY</b>=CVV2=ADDRESS=ZIP
+                                    </p>
+                                </div>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="cc_checker" class="col-sm-2 control-label">Checker</label>
+                                        <div class="col-sm-4">
+                                            <select class="form-control" id="cc_checker" style="width:600px;">
+                                                <option value="luxchecker">LuxChecker
+                                                    (0.50$ / check)
+                                                </option>
+                                                <option value="ochecker">0check
+                                                    (0.50$ / check)
+                                                </option>
+                                                <option value="cardok">Card-OK
+                                                    (0.50$ / check)
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cc_data" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-4">
+                                            <textarea class="form-control" id="cc_data"
+                                                style="height: 150px;width:600px;"
+                                                placeholder="5434770001115784=1209=939=5th Avenue=939777"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="button" class="btn btn-default make_check"
+                                                data-checktype="cc"><span class="glyphicon glyphicon-play"
+                                                    aria-hidden="true"></span> Check</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="cc_result"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="ssnTab">
+                                <div class="alert alert-block alert-info fade in" style="" tabindex="-1">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        SSN / Date of Birth lookup service<br>
+                                    </p>
+                                    <h3>This service is currently offline. I sure will send out notifications to all the
+                                        customers about re-opening of that lookup service. Thanks for your patience.
+                                    </h3>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="binTab">
+                                <div class="alert alert-block alert-info fade in" style="" tabindex="-1">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        It's free!<br>
+                                        Up to 10 bins per search<br>
+                                        Format: <b>BIN_NUMBER</b> or <b>CARD_NUMBER</b>
+                                    </p>
+                                </div>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="bins_data" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-4">
+                                            <textarea class="form-control" id="bins_data" style="height: 150px;"
+                                                placeholder="543477"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="button" class="btn btn-default make_check"
+                                                data-checktype="bins"><span class="glyphicon glyphicon-search"
+                                                    aria-hidden="true"></span> Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="bins_result"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="zipTab">
+                                <div class="alert alert-block alert-info fade in" style="" tabindex="-1">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        It's free!<br>
+                                        ZIP code look up service. Enter desired zip code to find out the state and city.
+                                        Maximum of 10 zip codes per search.<br>
+                                        Format: <b>ZIP</b>
+                                    </p>
+                                </div>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="zips_data" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-4">
+                                            <textarea class="form-control" id="zips_data" style="height: 150px;"
+                                                placeholder="62712"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="button" class="btn btn-default make_check"
+                                                data-checktype="zips"><span class="glyphicon glyphicon-search"
+                                                    aria-hidden="true"></span> Search</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="zips_result"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="track1Tab">
+                                <div class="alert alert-block alert-info fade in" style="" tabindex="-1">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        It's free!
+                                    </p>
+                                </div>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="t1_first_name" class="col-sm-2 control-label">First Name</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" placeholder="Brian"
+                                                id="t1_first_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="t1_last_name" class="col-sm-2 control-label">Last Name</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control" placeholder="Krebs"
+                                                id="t1_last_name">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="t1_track2" class="col-sm-2 control-label">Track2</label>
+                                        <div class="col-sm-4">
+                                            <input type="text" class="form-control"
+                                                placeholder="4833160018438831=18031010000055300000" id="t1_track2">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="button" class="btn btn-default" id="track1_gen"><span
+                                                    class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+                                                Generate
+                                                Track1</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="track1_result"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="ccinppTab">
+                                <div class="alert alert-block alert-info fade in" style="">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        You can check if a card was used in PayPal<br>
+                                        Price is 0.75$ per each card<br>
+                                        Up to 5 card numbers per search<br>
+                                        Format: <b>CARD_NUMBER</b>
+                                    </p>
+                                </div>
+                                <form class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="ccinpp_data" class="col-sm-2 control-label"></label>
+                                        <div class="col-sm-4">
+                                            <textarea class="form-control" id="ccinpp_data" style="height: 150px;"
+                                                placeholder="5217291802188711"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <div class="col-sm-offset-2 col-sm-10">
+                                            <button type="button" class="btn btn-default make_check"
+                                                data-checktype="ccinpp"><span class="glyphicon glyphicon-play"
+                                                    aria-hidden="true"></span> Check</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div id="ccinpp_result"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="mybinsTab">
+                                <div class="col-sm-12 panel panel-default" style="background:#ffffe0">
+                                    <p>This page will allow you to see the list of the bins you bought.</p>
+                                    <p>Column called "Quantity in next update" shows a number of bins to be available in
+                                        the
+                                        next update.</p>
+                                    <p>Press "Refresh Bins" button to get the latest information on the number of
+                                        available
+                                        bins in the upcoming update.</p>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div id="sticky" class="sticky-element">
+                                        <div class="sticky-content">
+                                            <span class="batchAddDiv">
+                                                <button class="btn btn-primary buttonsCart" style="margin-bottom: 10px;"
+                                                    onclick="refreshMyBins();">Refresh Bins</button>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="mybins_result"></div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="historyTab">
+                                <div class="alert alert-block alert-info fade in" style="" tabindex="-1">
+                                    <button type="button" class="close" data-dismiss="alert">×</button>
+                                    <p>
+                                        History of your checks<br>
+                                        We keep records from last 7 days<br>
+                                    </p>
+                                </div>
+                                <div id="history_result"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <footer>
+                <center><a href="billings.html">Earn money with us!</a></center>
+                <p>© 2021 Crabs on Security </p>
+            </footer>
+            <div class="modal fade" id="myModalCR" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" style="width:800px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title">Crab Rating</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <table class="table table-bordered" style="width:100%;max-width:400px;">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Total Deposits: </th>
+                                                    <td><a href="Tools.html">0.0 $</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Total Refunds: </th>
+                                                    <td><a href="Tools.html">0.00 $</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Crab Points: </th>
+                                                    <td>0.0 - 0.00 = 0.0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <span style="font-size:15pt;">Your crab rating:</span> &nbsp;<span
+                                            style="font-size:17pt;">
+
+                                            0
+
+                                        </span> <br>
+                                        Next level is <b>1 crab</b> (1.00 points left)
+                                    </div>
+                                    <div class="col-md-12">
+                                        <i>We count only deposits and refunds from <u>last 60 days</u><br>
+                                            The rating is recalculated every 30 minutes</i><br><br>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <table class="table table-bordered table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th>Crab Points</th>
+                                                    <th>Rating</th>
+                                                    <th>Discounts</th>
+                                                    <th>Other</th>
+                                                </tr>
+                                                <tr id="crab00_tr" class="success">
+                                                    <td>&lt; 1</td>
+                                                    <td>0 crabs</td>
+                                                    <td> - </td>
+                                                    <td> wait period 3 hours </td>
+                                                </tr>
+                                                <tr id="crab1_tr">
+                                                    <td>1 - 1000</td>
+                                                    <td>1 crab</td>
+                                                    <td> 3% </td>
+                                                    <td> wait period 2 hours </td>
+                                                </tr>
+                                                <tr id="crab2_tr">
+                                                    <td>1001 - 2000</td>
+                                                    <td>2 crabs</td>
+                                                    <td> 5% </td>
+                                                    <td> wait period 1 hour </td>
+                                                </tr>
+                                                <tr id="crab3_tr">
+                                                    <td>2001 - 3000</td>
+                                                    <td>3 crabs</td>
+                                                    <td> 7% </td>
+                                                    <td> - </td>
+                                                </tr>
+                                                <tr id="crab4_tr">
+                                                    <td>3001 - 4000</td>
+                                                    <td>4 crabs</td>
+                                                    <td> 9% </td>
+                                                    <td> - </td>
+                                                </tr>
+                                                <tr id="crab5_tr">
+                                                    <td>4001 - 6000</td>
+                                                    <td>5 crabs</td>
+                                                    <td> 12% </td>
+                                                    <td> - </td>
+                                                </tr>
+                                                <tr id="crab6_tr">
+                                                    <td>&gt; 6001</td>
+                                                    <td>super crab</td>
+                                                    <td> 15% </td>
+                                                    <td> VIP status </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="modal fade" id="myModalDetailsC" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" style="width:800px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="myModalDetailsCTitle">Details</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-danger alert-danger-modal fade in" style="display:none;">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <p class="modalDanger"></p>
+                            </div>
+                            <div id="cr_details_data" style="max-height:400px;overflow:auto;"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModalDetailsMG" tabindex="-1" role="dialog" aria-hidden="false">
+                <div class="modal-dialog" style="width:800px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="myModalDetailsMGTitle">Terms for receiving a free daily dump!
+                            </h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-danger alert-danger-modal fade in" style="display:none;">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <p class="modalDanger"></p>
+                            </div>
+                            <div id="mg_data" style="max-height:400px;overflow:auto;">
+                                <ul>
+                                    <li>you made a purchase in the last 24 hours</li>
+                                    <li>you made a deposit within the last 24 hours</li>
+                                    <li>you don't have any outstanding credits/loans</li>
+                                    <li>minimum of $100 in combined deposits </li>
+                                </ul>
+                                <span style="font-weight: bold;font-size: 12px;">Disclaimer:<p>
+                                        - Daily free dump is an expiring, randomly picked dump from the older databases.
+                                        There's no guarantee It will work and not region locked in your area. Creating a
+                                        ticket complaining about a free dump will void an ability to receive any future
+                                        daily gifts in my shop.</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-success" id="go_to_my_orders"
+                                onclick="window.location.href = &#39;/orders&#39;;" style="display: none;">Go to My
+                                Orders</button>
+                            <button type="button" class="btn btn-primary" id="receive_gift"
+                                onclick="ReceiveGift();">Click
+                                here to receive your gift.</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="myModalLoan" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog" style="width:800px;">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                    aria-hidden="true">×</span></button>
+                            <h4 class="modal-title" id="myModalLoanTitle">Loan request</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="alert alert-danger alert-danger-modal fade in" style="display:none;">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <p class="modalDanger"></p>
+                            </div>
+                            <div class="alert alert-success alert-success-modal fade in" style="display:none;">
+                                <button type="button" class="close" data-dismiss="alert">×</button>
+                                <p class="modalSuccess"></p>
+                            </div>
+                            <div id="loan_data"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <link href="./Tools_files/bootstrap-datetimepicker(1).min.css" rel="stylesheet">
+        <link href="./Tools_files/bootstrap-toggle(1).min.css" rel="stylesheet">
+        <link href="./Tools_files/jquery(1).bootstrap-touchspin.css" rel="stylesheet">
+        <link href="./Tools_files/slider(1).css" rel="stylesheet">
+        <script src="./Tools_files/jquery.min(1).js.download"></script>
+        <script src="./Tools_files/bootstrap.min(1).js.download"></script>
+        <script src="./Tools_files/ie10-viewport-bug-workaround(1).js.download"></script>
+        <script src="./Tools_files/date(1).js.download"></script>
+        <script src="./Tools_files/moment-with-locales.min(1).js.download"></script>
+        <script src="./Tools_files/bootstrap-datetimepicker.min(1).js.download"></script>
+        <script src="./Tools_files/passgen.min(1).js.download"></script>
+        <script src="./Tools_files/bootstrap-toggle.min(1).js.download"></script>
+        <script src="./Tools_files/jquery.bootstrap-touchspin(1).js.download"></script>
+        <script src="./Tools_files/bootstrap-slider(1).js.download"></script>
+
+        <script>
+            $(document).ready(function () {
+
+                var menuID = document.getElementById("menu-home");
+                if (menuID)
+                    menuID.className = menuID.className + " active";
+
+
+                /*String.prototype.capitalise = function() {
+                    return this.charAt(0).toUpperCase() + this.slice(1);
+                };*/
+
+                startTime();
+                getLiveData();
+
+                $('.open_cr').click(function () {
+                    $('#myModalCR').modal('show');
+                    $('#cr_data').html('data is loading, please wait ...');
+
+                    return false;
+                });
+                $('.open_in').click(function () {
+                    $('#AcoountInfo').modal('show');
+                    $('#cr_data').html('data is loading, please wait ...');
+
+                    return false;
+                });
+
+                $('.open_request_loan').click(function () {
+                    $('#myModalLoan').modal('show');
+                    $('#loan_data').html('data is loading, please wait ...');
+
+                    // $.get("get_loan/index.php", function (data) {
+                    //     if(data.status && data.status == 'success') {
+                    //         $('#loan_data').html(data.html);
+                    //     } else {
+                    //         showMessage('modal', 'danger', data.message);
+                    //     }
+                    // }, 'json').error(function () {
+                    //     showMessage('modal', 'danger', 'timeout error, please try again');
+                    // }).always(function() {
+                    //     //
+                    // });
+
+                    return false;
+                });
+
+            });
+
+            if (window.parent.frames.length > 0) {
+                // $.get("check_iframe/index.php", function (data) {
+                //     //
+                // }, 'json').error(function () {
+                //     //
+                // }).always(function() {
+                //     //
+                // });
+            }
+
+            var currentHour = 23;
+            var timeoutArray = [];
+            var userBalance = 0.000000;
+
+            function getRatingDetails(action) {
+                $('#myModalDetailsC').modal('show');
+                $('#cr_details_data').html('data is loading, please wait ...');
+
+                // $.post("get_crab_rating/index.php", {
+                //     csrfmiddlewaretoken: 'TWXCtntphziA8JBWLFYVxSpjunWwUdQ1',
+                //     action: action
+                // }, function (data) {
+                //     $('#cr_details_data').html(data);
+                // }).error(function () {
+                //     showMessage('modal', 'danger', 'timeout error, please try again');
+                // }).always(function() {
+                //     //
+                // });
+
+                return false;
+            }
+
+            function checkTime(i) {
+                return (i < 10) ? "0" + i : i;
+            }
+
+            function startTime() {
+                var today = new Date();
+                today.setHours(currentHour);
+                var h = today.getHours();
+                var m = checkTime(today.getMinutes());
+                var s = checkTime(today.getSeconds());
+                if (m == 59 && s == 59)
+                    currentHour++;
+                if (currentHour > 23)
+                    currentHour = 0;
+                document.getElementById('current_time').innerHTML = h + ":" + m + ":" + s;
+                setTimeout(function () {
+                    startTime()
+                }, 1000);
+            }
+
+
+            function firstUpperCase(str) {
+                return str.charAt(0).toUpperCase() + str.slice(1);
+            }
+
+            function showMessage(where, type, message, messageID, timeout) {
+                var divClass = (where == 'page') ? 'alert-' + type + '-page' : 'alert-' + type + '-modal';
+                messageID = (messageID == undefined) ? where + firstUpperCase(type) : messageID;
+
+                if (timeout != false && (timeout == undefined || timeout < 1)) {
+                    timeout = 5000;
+                }
+
+                var elementMessage = (where == 'page') ? '#' : '.';
+
+                if ($('.' + divClass).is(':visible')) {
+                    if (timeout != false && timeoutArray[type] != undefined) {
+                        clearTimeout(timeoutArray[type]);
+                        timeoutArray[type] = undefined;
+                        delete timeoutArray[type];
+                    }
+                    $(elementMessage + messageID).append('<br>' + message);
+                } else {
+                    $(elementMessage + messageID).html(message);
+                }
+
+                $('.' + divClass).show().focus();
+
+                if (timeout != false)
+                    timeoutArray[type] = setTimeout(function () {
+                        $('.' + divClass).hide('slow');
+                    }, timeout);
+
+                return false;
+            }
+
+            function getLiveData() {
+                // $.getJSON('get_live_data/index.php', function (data) {
+                //     if(data.info)
+                //         showMessage('page', 'info', data.info, undefined, false);
+                //     if(data.count_cart_items > 0)
+                //         $('#count_cart_items').html(data.count_cart_items);
+                //     if(data.count_tickets > 0)
+                //         if(data.waiting_tickets !== undefined)
+                //             $('#count_tickets').html(data.waiting_tickets + '/' + data.count_tickets);
+                //         else
+                //             $('#count_tickets').html(data.count_tickets);
+                //     //if(data.count_pendings > 0)
+                //     if(data.count_payoffs > 0)
+                //         $('#count_payoffs').html(data.count_payoffs);
+                //     if(data.remain_amount)
+                //         $('#remain_amount').html(data.remain_amount);
+                //     if (data.bid_total>0) {
+                //         $('#count_bids').html(data.bid_active + '/' + data.bid_total);
+                //     }
+                //     if(data.current_loan) {
+                //         $('#current_loan').html(data.current_loan);
+                //         $('#current_loan_block').css("display","initial");
+                //     } else {
+                //         $('#request_loan_block').css("display","initial");
+                //     }
+                // }).error(function () {
+                //     //
+                // }).always(function () {
+                //     //
+                // });
+            }
+
+            function ReceiveGift() {
+                $('#receive_gift').prop('disabled', true);
+                var post_array = {
+                    'action': 'receive_gift',
+                    'type': 'dumps',
+                    'ids': '0',
+                    'csrfmiddlewaretoken': 'TWXCtntphziA8JBWLFYVxSpjunWwUdQ1',
+                };
+                // $.post('cart/index.php', post_array, function (data) {
+                //     if(data.status == 'success') {
+                //         showMessage('modal', 'success', data.message);
+                //         $('#go_to_my_orders').show();
+                //     }
+                //     if (data && data.status == 'fail') {
+                //         showMessage('modal', 'danger', data.message);
+                //     }
+                // }, 'json').error(function () {
+                //     showMessage('modal', 'danger', 'In order to receive a gift you have got to have minimum of $100 in combined deposits');
+                // }).always(function () {
+                //     $('#receive_gift').prop('disabled', false);
+                // });
+                return true;
+            }
+
+            function GetMyLoan() {
+                $('#get_my_loan').prop('disabled', true);
+                $loan_amount = $('.active [name="options"]').attr('loan')
+                var post_array = {
+                    'action': 'get_my_loan',
+                    'loan_amount': $loan_amount,
+                    'csrfmiddlewaretoken': 'TWXCtntphziA8JBWLFYVxSpjunWwUdQ1',
+                };
+                // $.post(/get_loan/, post_array, function (data) {
+                //     if(data.status == 'success') {
+                //         showMessage('modal', 'success', data.message);
+                //     }
+                //     if (data && data.status == 'fail') {
+                //         showMessage('modal', 'danger', data.message);
+                //     }
+                // }, 'json').error(function () {
+                //     showMessage('modal', 'danger', 'In order to receive a gift you have got to have minimum of $100 in combined deposits');
+                // }).always(function () {
+                //     $('#get_my_loan').prop('disabled', false);
+                // });
+                return true;
+            }
+        </script>
+        <script src="./Tools_files/sweetalert.min.js.download"></script>
+        <script>
+            var csrfToken = 'OUjsmCt5Hj8TxjF40SBG3lQ8bDaEM2pvTp0J0iLpa5SrHSeAcaBJithAgmqiIooB';
+            var cartItemCount = 0;
+        </script>
+        <script src="./Tools_files/cart.js.download"></script>
+
+
+
+
+
+    </li>
+</body>
+
+</html>
