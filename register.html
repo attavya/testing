@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://www.briansclubas.shop/sign_up.php -->
+<html data-lt-installed="true" class=" cjnsezkry idc0_350"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Briansclub.cm register</title>
+	<link rel="shortcut icon" type="image/jpg" href="https://www.briansclubas.shop/favicon.ico">
+	    <meta name="description" content="Briansclub The best quality brians for all your market needs. Briansclub Autoshop ">
+	    <meta name="keywords" content="briansclub, briansclub login, briansclub.cm, bclub.cm, briansclub shop register, briansclub brian shop,">
+	
+
+</head>
+<body>
+	<link href="./register_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<center>
+	 <div class="form-container" style="text-align: left;">
+	 <ul style="color: red; font-weight: bold; font-size: 14px; float: left; display: none;" class="response2">
+			<li>The two password fields didn't match.</li>
+	</ul>
+	<ul style="color: red; font-weight: bold; font-size: 14px; float: left; display: none; margin-top: -40px;" class="response3">
+			<li>This username already exists.</li>
+	</ul>
+	 <h1 style="color: rgb(51, 51, 51); font-size: 30px; text-align: left;">Registration</h1>
+
+	 <label style="font-size: 14px;">Login</label>
+	 <input type="text" name="username" class="form-control input" id="username" placeholder="Login" required=""><br>
+
+	  <label style="font-size: 14px;">Password <span style="font-size: 8px; margin-left: 20px;">(Minimum 8 characters, at least 1 letter and 1 number)</span></label>
+	 <input type="password" name="password" class="form-control input" id="password" placeholder="Password" required="" onkeypress="trigger()">
+	 <div class="indicator">
+	 	<span class="weak"></span>
+	 	<span class="medium"></span>
+	 	<span class="strong"></span>
+	 </div>
+	 <div class="text">Your password is too weak</div>
+	 <br>
+
+	 <label style="font-size: 14px;">Confirm Password</label>
+	 <input type="password" name="password_confirm" class="form-control input" id="confirm_password" placeholder="Confirm Password" required=""><br>
+
+	 <label style="font-size: 14px;">Jabber (optional)</label>
+	 <input type="email" name="jabber" class="form-control input" id="email" placeholder="brian@jabme.de" required=""><br>
+	 
+	 <span class="response" style="color: red; display: none; margin-bottom: 5px; font-size: 14px;">Incorrect answer. Please try again.</span>
+
+	 <label style="font-size: 14px;" id="operation">Captcha <span id="num1" style="color: rgb(128, 128, 128); font-size: 23px; margin-left: 10px;">1</span> <span style="font-size: 23px; color: rgb(128, 128, 128);">+</span> <span id="num2" style="color: rgb(128, 128, 128); font-size: 23px;">5</span><span style="color: rgb(128, 128, 128); font-size: 23px;">=</span></label>
+	  <input type="text" class="form-control input" id="input_val"><br>
+
+	  <input type="checkbox" required="" style="cursor: pointer; margin-top: -20px;"> <span style="font-size: 13px;">I agree to the <span><a href="https://www.briansclubas.shop/sign_up.php#" style="text-decoration: none;">Terms of Service</a></span></span><br><br>
+
+	  <button class="register-btn" id="insert" name="register" onclick="register()">Create Account</button>
+	  <p style="display: inline-block; font-size: 18px;">or</p>
+	  <a href="index.html" style="text-decoration: none; color: rgb(66, 139, 202); font-size: 18px;">sign in</a>
+	</div>
+
+	
+</center>
+
+
+<script type="text/javascript">
+	const indicator = document.querySelector(".indicator");
+	const input = document.querySelector("");
+	const weak = document.querySelector(".weak");
+	const medium = document.querySelector(".medium");
+	const strong = document.querySelector(".strong");
+	const text = document.querySelector(".text");
+	let regExpWeak = /[a-z]/;
+	let regExpMedium = /[\d+]/;
+	let regExpStrong = /.[!,@,#,$,%,^,&,*,?,_,~,-,(,)]/;
+
+	function trigger(){
+           if(input.value != ""){
+             indicator.style.display = "block";
+             indicator.style.display = "flex";
+             if(input.value.length <= 3 && (input.value.match(regExpWeak) || input.value.match(regExpMedium) || input.value.match(regExpStrong)))no=1;
+             if(input.value.length >= 6 && ((input.value.match(regExpWeak) && input.value.match(regExpMedium)) || (input.value.match(regExpMedium) && input.value.match(regExpStrong)) || (input.value.match(regExpWeak) && input.value.match(regExpStrong))))no=2;
+             if(input.value.length >= 6 && input.value.match(regExpWeak) && input.value.match(regExpMedium) && input.value.match(regExpStrong))no=3;
+             }
+         }else{
+             indicator.style.display = "none";
+             text.style.display = "none";
+         }
+</script>
+
+<script src="./register_files/jquery.min.js.download"></script>
+<script type="text/javascript">
+	let input_val = document.getElementById('input_val');
+
+	let num1 = document.getElementById('num1');
+	let num2 = document.getElementById('num2');
+
+	const myBtn = document.getElementById('insert');
+
+
+	// returns a random integer from 0 to 9
+	num1.innerText = Math.floor(Math.random() * 10);
+	num2.innerText = Math.floor(Math.random() * 10);
+
+	let number1 = num1.innerText;
+	let number2 = num2.innerText;
+
+	myBtn.addEventListener("click", ()=> {
+
+		let sum_result = parseInt(number1) + parseInt(number2);
+
+		let res = parseInt(input_val.value);
+
+		if (res == sum_result) {
+			$(document).ready(function() {
+				var data = {
+					username: $("#username").val(),
+					password: $("#password").val(),
+					password_confirm: $("#confirm_password").val(),
+					email: $("#email").val(),
+				};
+				$.ajax({
+					url: "signup_action.php",
+					method: "post",
+					data: data,
+					success: function(data) {
+						if (data == 'no_name') {
+							const response3 = document.querySelector(".response3");
+							response3.style.display = "block";
+						} else if (data == 'not match') {
+							const response2 = document.querySelector(".response2");
+							response2.style.display = "block";
+						} else if (data == 'Successful') {
+						    window.location.href = 'billings.php';
+						}
+					}
+				});
+			});
+		} else {
+			const response = document.querySelector(".response");
+			response.style.display = "block";
+		}
+	});
+
+</script>
+
+<style type="text/css">
+	body {
+		background: rgb(238, 238, 238);
+		font-family: sans-serif;
+	}
+	.form-container {
+		height: 620px;
+		width: 430px;
+		margin-top: 80px;
+	}
+	label {
+		font-weight: bold;
+		color: rgb(51, 51, 51);
+	}
+	.input {
+		height: 50px;
+		box-sizing: border-box;
+		border: 1px solid lightgrey;		
+	}
+	.register-btn {
+		height: 30px;
+		width: 125px;
+		color: #fff;
+		background: rgb(66, 139, 202);
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		font-size: 14px;
+	}
+	.register-btn:hover {
+		background: rgb(48, 133, 169);
+	}
+	 .indicator {
+		height: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 10px 0;
+		display: none;
+	}
+	 .indicator span {
+		width: 100%;
+		height: 100%;
+		background: lightgrey;
+		border-radius: 5px;
+	}
+	 .indicator span.medium {
+		margin: 0 3px;
+	}
+	.indicator span:before {
+		content: '';
+		position: absolute;
+		width: 140px;
+		height: 10px;
+		border-radius: 5px;
+	}
+	.indicator span.active.weak:before {
+		background-color: #ff4757;
+	}
+	.indicator span.active.medium:before {
+		background-color: orange;
+	}
+	.indicator span.active.strong:before {
+		background-color: #23ad5c;
+	}
+	.text {
+		display: none;
+	}
+</style>
+
+</body></html>
