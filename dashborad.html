@@ -61,35 +61,33 @@
     <body>
         <div class="container" style="width:90%;max-width:1700px;">
             <div class="masthead" style>
-                <div role="navigation"
-                    style="float: right;margin-top: 0px; white-space: nowrap; width: min-content;width: -moz-min-content;width: -webkit-min-content;display: -ms-grid;-ms-grid-columns: min-content;">
+                <div role="navigation" style="float: right;margin-top: 0px; white-space: nowrap; width: min-content;width: -moz-min-content;width: -webkit-min-content;display: -ms-grid;-ms-grid-columns: min-content;">
                     <ul class="nav nav-justified nav-right">
                         <li>
-                            <a href="billings.html"
-                                style="color:green;"> <b>Lottery</b> 
-                                <i class="fa-duotone fa-regular fa-dollar-sign" style="--fa-primary-color: #008000; --fa-secondary-color: #008000;"></i></a>
+                            <a href="billings.html" style="color:green;">
+                                <b>Lottery</b> 
+                                <i class="fa-solid fa-dollar-sign"></i>
+                            </a>
                         </li>
                         <li>
-                            <a
-                                href="cvv.html"><span
-                                    class="openMyGift" data-toggle="modal"
-                                    data-target="#myModalDetailsMG"><span
-                                        class="glyphicon glyphicon-gift"
-                                        aria-hidden="true"
-                                        style="color: orangered;"></span> My
-                                    Gift </span></a>
+                            <a href="cvv.html">
+                                <span class="openMyGift" data-toggle="modal" data-target="#myModalDetailsMG">
+                                    <i class="fa-solid fa-gift" style="color: orangered;"></i>
+                                    My Gift
+                                </span>
+                            </a>
                         </li>
                         <li>
-                            <a
-                                href="index.html"><span
-                                    class="glyphicon glyphicon-log-out"
-                                    aria-hidden="true"></span><b> Logout</b></a>
+                            <a href="index.html">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <b>Logout</b>
+                            </a>
                         </li>
                     </ul>
                 </div>
                 <div class="text-muted"
                     style="margin-top: -20px;padding-bottom:10px;float: none;width: auto;overflow: visible;">
-                    <h3 class="text-muted">Welcome <i>attavya</i> <span
+                    <h3 class="text-muted">Welcome <i class="username-display"></i> <span
                             style="font-size: 16px;">[<a
                                 href="Profile.html">profile</a>]</span></h3>
 
@@ -1718,4 +1716,22 @@
             data-cf-beacon="{&quot;rayId&quot;:&quot;8a9cb5cb0a712143&quot;,&quot;version&quot;:&quot;2024.7.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;ac0a75554ccc4b13ae095a304d2e465b&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfL4&quot;:true}}}"
             crossorigin="anonymous"></script>
 
+        <script>
+        // Function to display username
+        function displayUsername() {
+            const params = new URLSearchParams(window.location.search);
+            const urlUsername = params.get('username');
+            const storedUsername = localStorage.getItem('currentUser');
+            const username = urlUsername || storedUsername || 'Guest';
+            
+            // Find all elements with class 'username-display' and update them
+            const usernameElements = document.querySelectorAll('.username-display');
+            usernameElements.forEach(element => {
+                element.textContent = username;
+            });
+        }
+
+        // Run when page loads
+        document.addEventListener('DOMContentLoaded', displayUsername);
+        </script>
     </body></html>

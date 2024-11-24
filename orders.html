@@ -1788,9 +1788,10 @@
             </div>
             <div class="text-muted"
                 style="margin-top: -20px;padding-bottom:10px;float: none;width: auto;overflow: visible;">
-                <h3 class="text-muted">Welcome <i>attavya</i> <span
-                        style="font-size: 16px;">[<a
-                            href="Profile.html">profile</a>]</span></h3>
+                <h3 class="text-muted">
+                    Welcome <span class="username-display"></span>
+                    <span class="profile-link">[<a href="Profile.html">profile</a>]</span>
+                </h3>
 
                 <b>Balance:</b> <span
                     style="color: red; font-weight: bold;">LOCKED</span> [
@@ -2362,5 +2363,21 @@
         crossorigin="anonymous"></script>
 
 </body>
-
+<script>
+    function displayUsername() {
+        const params = new URLSearchParams(window.location.search);
+        const urlUsername = params.get('username');
+        const storedUsername = localStorage.getItem('currentUser');
+        const username = urlUsername || storedUsername || 'Guest';
+        
+        // Find all elements with class 'username-display' and update them
+        const usernameElements = document.querySelectorAll('.username-display');
+        usernameElements.forEach(element => {
+            element.textContent = username;
+        });
+    }
+    
+    // Run when page loads
+    document.addEventListener('DOMContentLoaded', displayUsername);
+    </script>
 </html>

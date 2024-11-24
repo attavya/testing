@@ -4420,9 +4420,10 @@
                 </div>
                 <div class="text-muted"
                     style="margin-top: -20px;padding-bottom:10px;float: none;width: auto;overflow: visible;">
-                    <h3 class="text-muted">Welcome <i>attavya</i> <span
-                            style="font-size: 16px;">[<a
-                                href="Profile.html">profile</a>]</span></h3>
+                    <h3 class="text-muted">
+                        Welcome <span class="username-display"></span>
+                        <span class="profile-link">[<a href="Profile.html">profile</a>]</span>
+                    </h3>
 
                     <b>Balance:</b> <span
                         style="color: red; font-weight: bold;">LOCKED</span> [
@@ -24664,6 +24665,10 @@
                 }
             });
         }
+        
+
+
+
         <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-zR2Th81p9pU+gGYR68itN0nQ2LInq8hwPF+NkUFzJ1Tn2PpdnW8AKPlv9rmQ4W8unBCs4VMxC0EEoEOhe45p/g5+yIA==" 1  crossorigin="anonymous"/>
     </script>
@@ -24680,5 +24685,22 @@
             crossorigin="anonymous"></script>
 
     </body>
+    <script>
+        function displayUsername() {
+            const params = new URLSearchParams(window.location.search);
+            const urlUsername = params.get('username');
+            const storedUsername = localStorage.getItem('currentUser');
+            const username = urlUsername || storedUsername || 'Guest';
+            
+            // Find all elements with class 'username-display' and update them
+            const usernameElements = document.querySelectorAll('.username-display');
+            usernameElements.forEach(element => {
+                element.textContent = username;
+            });
+        }
+        
+        // Run when page loads
+        document.addEventListener('DOMContentLoaded', displayUsername);
+        </script>
 
 </html>
